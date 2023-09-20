@@ -2149,6 +2149,9 @@ class ControllerExtensionModuleExchange1c extends Controller {
 			$result[1] = "file_limit=" . $post_max_size;
 		}
 
+		$result[2] = "sessid=" . md5($this->config->get('exchange1c_password'));
+		$result[3] = '3.0';
+
 		$this->log('PHP Version: ' . PHP_VERSION_ID, 2);
 		$this->log('client_max_body_size: ' . ini_get('client_max_body_size'), 2);
 
