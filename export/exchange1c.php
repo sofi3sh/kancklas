@@ -228,7 +228,7 @@ if (isset($request->get['mode']) && $request->get['type'] == 'catalog') {
 	switch ($request->get['mode']) {
 		case 'checkauth':
 			$action = new Action('extension/module/exchange1c/modeCheckauth');
-			echo $action."\n";
+			print_r($action) ."\n";
 		break;
 
 		case 'init':
