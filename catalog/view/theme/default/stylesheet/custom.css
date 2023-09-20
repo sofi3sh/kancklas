@@ -1,0 +1,58 @@
+/* підключення шрифта Helvetica */
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url('../../../../../Helvetica-Bold.eot');
+    src: url('../../../../../Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../../../../Helvetica-Bold.woff2') format('woff2'),
+    url('../../../../../Helvetica-Bold.woff') format('woff'),
+    url('../../../../../Helvetica-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* /підключення шрифта Helvetica */
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section__white__cust {
+    background: #FFFFFF;
+}
+
+.section__gray__cust {
+    background: #F5F3F3;
+}
+
+.container__cust {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.product__title__cust {
+    font-family: Roboto Flex;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    color: #000000;
+}
+
+/* product card */
+
+.product_card_name_cust a {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000 !important;
+}

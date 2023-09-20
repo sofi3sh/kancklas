@@ -1,27 +1,157 @@
-<h3>{{ heading_title }}</h3>
-<div class="row"> {% for product in products %}
-  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
-    <div class="product-thumb transition">
-      <div class="image"><a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" /></a></div>
-      <div class="caption">
-        <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-        <p>{{ product.description }}</p>
-        {% if product.rating %}
-        <div class="rating">{% for i in 1..5 %}
-          {% if product.rating < i %} <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> {% else %} <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> {% endif %}
-          {% endfor %}</div>
-        {% endif %}
-        {% if product.price %}
-        <p class="price"> {% if not product.special %}
-          {{ product.price }}
-          {% else %} <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span> {% endif %}
-          {% if product.tax %} <span class="price-tax">{{ text_tax }} {{ product.tax }}</span> {% endif %} </p>
-        {% endif %} </div>
-      <div class="button-group">
-        <button type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
-        <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i></button>
-        <button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>
-      </div>
+<section class="section__white__cust">
+    <div class="container__cust">
+        <h3 class="product__title__cust">{{ heading_title }}</h3>
     </div>
-  </div>
-  {% endfor %} </div>
+</section>
+
+<section class="section__gray__cust slider-section__cust">
+    <div class="container__cust">
+        <div class="special__swiper__cust">
+            <div class="swiper-wrapper">
+                {% for product in products %}
+                    <div class="swiper-slide">
+                        <div class="product__card__hover__cust">
+                            <div class="product__card__cust">
+                                {# TODO: потрібно зробити нормальну картинку #}
+                                <div class="image"><a href="{{ product.href }}">
+                                        <img src="{{ product.thumb }}" alt="{{ product.name }}"
+                                             title="{{ product.name }}" class="img-responsive product__card__img__cust"/></a>
+                                </div>
+                                <div class="caption">
+                                    <p class="product__card__name__cust"><a
+                                                href="{{ product.href }}">{{ product.name }}</a></p>
+                                    {# TODO: потрібно зробити нормальний рейтинг як на макеті #}
+                                    {% if product.rating %}
+                                        <div class="rating">
+                                            {% for i in 1..5 %}
+                                                {% if product.rating < i %} <span class="fa fa-stack"><i
+                                                            class="fa fa-star-o fa-stack-2x"></i></span> {% else %}
+                                                    <span
+                                                            class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+                                                                class="fa fa-star-o fa-stack-2x"></i></span> {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                    {# TODO: потрібно добавити артикул не хардкодом #}
+                                    <p class="product__card__article__cust">Артикул: KHO3006</p>
+                                    {% if product.price %}
+                                        <p class="price">
+                                        {% if not product.special %}
+                                            <p class="product__card__new__price__cust">{{ product.price }}<p>
+                                        {% else %}
+                                            <p class="product__card__old__price__cust"><span>{{ product.price }}</span>
+                                            </p>
+                                            <p class="product__card__new__price__cust">{{ product.special }}</p>
+                                        {% endif %}
+                                        </p>
+                                    {% endif %} </div>
+                                <div class="button-group">
+                                    <button type="button" onclick="cart.add('{{ product.product_id }}');"><i
+                                                class="fa fa-shopping-cart"></i> <span
+                                                class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+                                    <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}"
+                                            onclick="wishlist.add('{{ product.product_id }}');"><i
+                                                class="fa fa-heart"></i>
+                                    </button>
+                                    <button type="button" data-toggle="tooltip" title="{{ button_compare }}"
+                                            onclick="compare.add('{{ product.product_id }}');"><i
+                                                class="fa fa-exchange"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+            <button type="button" class="swiper-button-prev"></button>
+            <button type="button" class="swiper-button-next"></button>
+        </div>
+    </div>
+</section>
+
+
+{# TODO: потрібно потім перенести в файл css #}
+<style>
+    .product__card__hover__cust {
+        height: 100%;
+        padding: 55px 0;
+    }
+
+    .product__card__hover__cust:hover {
+        padding: 0;
+    }
+
+
+    .product__card__cust {
+        background-color: #FFFFFF;
+        border: 2px solid #BFBFBF;
+        padding: 24px 34px;
+    }
+
+    .product__card__hover__cust:hover .product__card__cust {
+        border-color: #FF0B0B;
+    }
+
+    .product__card__img__cust {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .product__card__name__cust {
+        margin-top: 40px;
+    }
+
+    .product__card__name__cust a {
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        color: #000000 !important;
+    }
+
+    .product__card__article__cust {
+        font-family: Raleway;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        color: #7A7A7A;
+    }
+
+    .product__card__old__price__cust {
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        color: #E33F3F;
+    }
+
+    .product__card__old__price__cust span {
+        position: relative;
+    }
+
+    .product__card__old__price__cust span:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 1px;
+        background-color: #E33F3F;
+    }
+
+    .product__card__new__price__cust {
+        font-family: Helvetica;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        color: #7A7A7A;
+    }
+</style>
+
+
+
