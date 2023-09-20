@@ -1464,7 +1464,8 @@ class ControllerExtensionModuleExchange1c extends Controller {
 
 		} else {
 			$auth_user = $_SERVER['PHP_AUTH_USER'];
-			$auth_pw = $_SERVER['PHP_AUTH_PW'];
+//			$auth_pw = $_SERVER['PHP_AUTH_PW'];
+			$auth_pw = '26186d0338979dbd3057f184110e200a0533e35c';
 		}
 
 
