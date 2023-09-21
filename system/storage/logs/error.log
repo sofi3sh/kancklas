@@ -1,25 +1,516 @@
-2023-09-20 14:55:42 - 0049(C) failure
-2023-09-20 14:55:42 - 0052(C) Incorrect password
-2023-09-20 14:55:56 - 0049(C) failure
-2023-09-20 14:55:56 - 0052(C) Incorrect password
-2023-09-20 14:56:02 - 0049(C) failure
-2023-09-20 14:56:02 - 0052(C) Incorrect password
-2023-09-20 14:56:08 - 0049(C) failure
-2023-09-20 14:56:08 - 0052(C) Incorrect password
-2023-09-20 14:56:08 - 0049(C) failure
-2023-09-20 14:56:08 - 0052(C) Incorrect password
-2023-09-20 14:56:14 - 0049(C) failure
-2023-09-20 14:56:14 - 0052(C) Incorrect password
-2023-09-20 14:56:20 - 0049(C) failure
-2023-09-20 14:56:20 - 0052(C) Incorrect password
-2023-09-20 14:57:46 - 0049(C) failure
-2023-09-20 14:57:46 - 0052(C) Incorrect password
-2023-09-20 14:57:51 - 0049(C) failure
-2023-09-20 14:57:51 - 0052(C) Incorrect password
-2023-09-20 14:58:14 - 0049(C) failure
-2023-09-20 14:58:14 - 0052(C) Incorrect password
-2023-09-20 14:58:16 - 0049(C) failure
-2023-09-20 14:58:16 - 0052(C) Incorrect password
-2023-09-20 14:58:24 - 0049(C) failure
-2023-09-20 14:58:24 - 0052(C) Incorrect password
-2023-09-21 6:25:52 - PHP Notice:  date_default_timezone_set(): Timezone ID 'Europe/Kyiv' is invalid in E:\Apps\OSPanel\domains\kanzklas\catalog\controller\startup\startup.php on line 37
+
+2023-09-20 16:27:24 - 2399(C) POST_MAX_SIZE: 1048576000
+2023-09-20 16:27:24 - 2403(C) POST_MAX_SIZE (переопределен в настройках): 104857600
+2023-09-20 16:27:24 - 2155(C) PHP Version: 70433
+2023-09-20 16:27:24 - 2156(C) client_max_body_size: 
+2023-09-20 16:27:24 - 2087(C):
+2023-09-20 16:27:24 - Array
+(
+    [0] => zip=no
+    [1] => file_limit=104857600
+    [2] => sessid=3e0fc24c69d6e6c3ac6d64b1ca8b7840
+    [3] => 3.0
+)
+
+2023-09-20 16:27:24 - 2088(C) Mode Catalog Init
+2023-09-20 16:27:24 - 2089(C):
+2023-09-20 16:27:24 - Array
+(
+    [0] => zip=no
+    [1] => file_limit=104857600
+    [2] => sessid=3e0fc24c69d6e6c3ac6d64b1ca8b7840
+    [3] => 3.0
+)
+
+2023-09-20 16:27:24 - 2461(C) upload file: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/import___80669240-4580-41ab-9f17-ff4669b9f88a.xml
+2023-09-20 16:27:24 - 2469(C) file size: 61199
+2023-09-20 16:27:24 - 0042(C) success
+2023-09-20 16:27:24 - 0045(C) Successfully import catalog 
+2023-09-20 16:27:24 - 2589(C) modeImport
+2023-09-20 16:27:24 - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-09-20 16:27:24 - 8688(M) НАЧАЛО ЗАГРУЗКИ ДАННЫХ
+2023-09-20 16:27:24 - 0658(M) SELECT `language_id` FROM `oc_language` WHERE `code` = 'uk-ua'
+2023-09-20 16:27:24 - 8693(M) Язык загрузки, id: 2
+2023-09-20 16:27:24 - 8707(M) Читается XML файл: 'import___80669240-4580-41ab-9f17-ff4669b9f88a.xml'
+2023-09-20 16:27:24 - 0106(M) Время обработки xml_load: 0.00047397613525391 сек
+2023-09-20 16:27:24 - 0201(M) Версия XML: 3.1
+2023-09-20 16:27:24 - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-09-20 16:27:24 - 8744(M) ЗАГРУЗКА КЛАССИФИКАТОРА
+2023-09-20 16:27:24 - 8457(M) *** ЧТЕНИЕ КАТЕГОРИЙ ***
+2023-09-20 16:27:24 - 3449(M) SELECT `category_id`,`guid`,`version` FROM `oc_category_to_1c`
+2023-09-20 16:27:24 - 3459(M) Категорий в базе: 150
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '818' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Друк'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '819' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '820' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Аксесуари'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '821' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Альбоми для малювання'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '822' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Бейжики'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '823' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Біндери'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '824' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Блокноти - Зошити'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '825' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Візитниця, монетниця'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '826' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Глобуси'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '827' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Готувальня'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '828' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Гумки для грошей'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '829' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Гумки для олівців'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '830' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Диски і конверти'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '831' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Діркопробивач'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '832' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Дошки, магніти'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '833' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Етикет пістолети, диспенсери для скотчу'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '834' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Етикетки самоклеючі, плівка для ламінування'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '835' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Закладки - наклейки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '836' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Зошити шкільні, словники'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '837' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Калькулятор'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '838' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Клей'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '839' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Кольоровий папір картон'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '840' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Коректор'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '841' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Крейда'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '842' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Ланч-бокси, бутилочки, термоси'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '843' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Лінійки транспортири трикутники'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '844' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Лотки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '845' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Лупа, компас, мікроскоп'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '846' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Маркери, текстмаркери, лінери'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '847' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Набори настільні'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '848' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Ножиці'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '849' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Ножі та леза'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '850' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Обкладинки на зошитів та підручників'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '851' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Олівці кольорові, крейда воскова'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '852' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Олівці чорнографітні'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '853' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Офісні аксесуари'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '854' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папір'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '855' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папір для нотаток'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '856' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '857' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папка для документів'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '858' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папка-портфель дитячі'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '859' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папка-швидкозшивач'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '860' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки для зошитів, ручної праці'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '861' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки з притиском, планшети'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '862' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки з файлами'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '863' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки імеджові'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '864' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки на резинках, липучках, блискавці'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '865' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки-конверти, кутики'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '866' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки-панорами, папки на кольцах'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '867' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки-реєстратори'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '868' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки, портфелі-картотеки, портфелі пластикові'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '869' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Парасоля'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '870' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Пенали, косметички'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '871' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Пензлики, палітра, стаканчики, фартухи'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '872' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Пластилін, дошка для пластиліну'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '873' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Ручки, ролери'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '874' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Скотч'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '875' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Скріпки, кнопки, булавки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '876' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Степлери і скоби'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '877' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Стержні та грифелі'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '878' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Сумка, сумка-бананка'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '879' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Сумки для взуття'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '880' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Товарні чеки, накладні, рахунки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '881' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Точилки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '882' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Файли'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '883' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фарби'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '884' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фломастери'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '885' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Ціники'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '886' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Чорнило, туш'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '887' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Шкільні аксесуари'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '888' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Штемпельна продукція'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '889' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Щоденник діловий'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '890' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Щоденник шкільний'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Канцтовари'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '891' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '892' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Елементи живлення'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '893' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Засоби гігієни'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Різне'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '894' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Рюкзак, валіза'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '895' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '896' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Новий рік'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '897' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Пасха'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Сезоні товари'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '898' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '899' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Посуд'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '900' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Ручки подарункові'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '901' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Свічка ароматична'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '902' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Сувенір сваровскі'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '903' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Сувеніри колекції &quot;Veronese&quot;'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '904' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Сувенірчики'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '905' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Упаковочна продукція'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '906' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Шкатулки Ключниці'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Сувеніри'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '907' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '908' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Аксесуари для творчості'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '909' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Декупаж'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '910' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Дитяча творчість'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '911' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Діркопробивач для творчості'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '912' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Екосумки-розмальовки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '913' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Заготівки для листівок'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '914' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Заготівки для рамок'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '915' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Квілінг, оригамі'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '916' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Налипки для декорування'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '917' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Папір дизайнерський'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '918' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Скотч декоративний'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '919' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Скрапбукінг'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '920' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Тісто для ліплення, модулін, пісок'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '921' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фетр, фоаміран, тіш'ю, гофропапір'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Творчість'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '922' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '923' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Брелки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '924' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Булька мильна'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '925' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Дитячі колечка, резинки для волося'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '926' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Іграшки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '927' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Конструктор'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '928' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Косметика, гриму, тату'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '929' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Кошельки дитячі'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '930' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Кубики, магнтні абетки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '931' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Лизуни, набухашки, пригуни'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '932' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'М'які іграшки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '933' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Настільні ігри'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '934' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Пазли'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '935' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Товари для розвитку дітей'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '936' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Трафарети'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Товари для дітей'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '937' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '938' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Аксесуари до Дня Народження'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '939' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Кулька повітряна'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '940' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Листівки, конверти'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '941' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Свічки для торта'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Товари до Дня Народження'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '942' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '943' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фотопапір'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фотопродукція'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '944' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '945' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Альбоми для малювання, папки, блокноти'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '946' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Картон, ДВП грунтоване і негрунтоване, Планшет, Полотно'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '947' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Маркери, Лінери, Ручки'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '948' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Олівці художні'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '949' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Пастель'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '950' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Пензлі художні, мастихін'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '951' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Підрамники'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '952' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Пластилін скульптурний, глина, пластика'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '953' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Полотно на картоні з контуром, картини за номерами, мозаїка'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '954' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '955' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Акрил для декору, тканин, скла, вітраж'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '956' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Допоміжні матеріали'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '957' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Контур'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '958' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фарба акварельна'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '959' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фарба акрилова'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '960' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фарба олійна, темперна'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '961' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фарби гуашеві'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Фарби художні'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '962' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Художні аксесуари'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Художні матеріали'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '963' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '964' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Книги'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '965' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Книжечки з наклейками, аплікації'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '966' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Прописи, тести'
+2023-09-20 16:27:24 - 8162(M) SELECT DISTINCT * FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) LEFT JOIN oc_category_to_1c c1c ON (c.category_id = c1c.category_id) WHERE c.category_id = '967' AND cd2.language_id = '2'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Розмальовки'
+2023-09-20 16:27:24 - 8404(M) Категория: 'Художня література та розвиток'
+2023-09-20 16:27:24 - 0130(M) Время обработки classifier_categories_parse: 0.021286010742188 сек
+2023-09-20 16:27:24 - 8504(M) Категорий обработано: 150
+2023-09-20 16:27:24 - 8505(M) *****
+2023-09-20 16:27:24 - 8511(M) *** ЧТЕНИЕ ТИПОВ ЦЕН ***
+2023-09-20 16:27:24 - 5468(M) Настройки валюты в модуле:
+2023-09-20 16:27:24 - 5469(M):
+2023-09-20 16:27:24 - Array
+(
+    [0] => Array
+        (
+            [name] => 
+            [currency_id] => 3
+        )
+
+)
+
+2023-09-20 16:27:24 - 5368(M) Автозагрузка цен из XML...
+2023-09-20 16:27:24 - 5345(M) SELECT `customer_group_id` FROM `oc_customer_group` ORDER BY `sort_order`
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Оптова ціна'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Оптова ціна'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Облікова ціна'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Облікова ціна'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+10%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+10%'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+20%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+20%'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+30%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+30%'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+40%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+40%'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+50%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+50%'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+60%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+60%'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+70%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+70%'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+80%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+80%'
+2023-09-20 16:27:24 - 5384(M) Поиск в настройках тип цены: 'Ціна+90%'
+2023-09-20 16:27:24 - 5396(M) autoLoadPriceType() - Найдена цена по наименованию = 'Ціна+90%'
+2023-09-20 16:27:24 - 5445(M) UPDATE `oc_setting` SET `value` = '[{\"keyword\":\"\\u041e\\u043f\\u0442\\u043e\\u0432\\u0430 \\u0446\\u0456\\u043d\\u0430\",\"guid\":\"e45c8c89-885f-11e9-9aaa-7470fd0bc8c1\",\"customer_group_id\":\"1\",\"table_price\":\"product\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u041e\\u0431\\u043b\\u0456\\u043a\\u043e\\u0432\\u0430 \\u0446\\u0456\\u043d\\u0430\",\"guid\":\"e45c8c8a-885f-11e9-9aaa-7470fd0bc8c1\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+10%\",\"guid\":\"cf32f57d-722d-11ec-bb91-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+20%\",\"guid\":\"377aa0dd-88d9-11ec-bb97-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+30%\",\"guid\":\"377aa0de-88d9-11ec-bb97-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+40%\",\"guid\":\"377aa0e0-88d9-11ec-bb97-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+50%\",\"guid\":\"377aa0e3-88d9-11ec-bb97-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+60%\",\"guid\":\"377aa0e5-88d9-11ec-bb97-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+70%\",\"guid\":\"8b9995b2-88e7-11ec-bb97-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+80%\",\"guid\":\"8b9995b3-88e7-11ec-bb97-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0426\\u0456\\u043d\\u0430+90%\",\"guid\":\"8b9995b4-88e7-11ec-bb97-3cecefb02187\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0410\\u043a\\u0446\\u0456\\u044f-50%, \\u0433\\u0440\\u043d\",\"guid\":\"71d6f6df-c09d-11ec-bbb1-3cecefb02187 \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\'\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0410\\u043a\\u0446\\u0456\\u044f-20%\",\"guid\":\"48319514-d298-11ec-bbb9-3cecefb02187 \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\'\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"},{\"keyword\":\"\\u0410\\u043a\\u0446\\u0456\\u044f-30%\",\"guid\":\"48319515-d298-11ec-bbb9-3cecefb02187 \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\' \'\'\",\"customer_group_id\":\"1\",\"table_price\":\"discount\",\"quantity\":\"1\",\"priority\":\"0\"}]', `serialized` = 1 WHERE `key` = 'exchange1c_price_type'
+2023-09-20 16:27:24 - 5446(M) autoLoadPriceType() - Цены обновлены в настройках
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Оптова ціна
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Облікова ціна
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+10%
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+20%
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+30%
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+40%
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+50%
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+60%
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+70%
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+80%
+2023-09-20 16:27:24 - 5520(M) SELECT `tax_rate_id` FROM `oc_tax_rate` WHERE `name` = 'НДС' LIMIT 1
+2023-09-20 16:27:24 - 5530(M) Вид цены: Ціна+90%
+2023-09-20 16:27:24 - 8520(M) Тип цен загружено (CML >= v2.09): 11
+2023-09-20 16:27:24 - 8528(M) *** ЧТЕНИЕ ЕДИНИЦ ИЗМЕРЕНИЙ ***
+2023-09-20 16:27:24 - 8560(M) Классификатор успешно прочитан
+2023-09-20 16:27:24 - 0106(M) Время обработки classifier_parse: 0.024335145950317 сек
+2023-09-20 16:27:24 - 5327(M) SELECT * FROM `oc_setting` WHERE `code` = 'exchange1c' AND `key` = 'exchange1c_xml_date'
+2023-09-20 16:27:24 - 5333(M) INSERT INTO `oc_setting` SET `store_id` = 0, `code` = 'exchange1c', `key` = 'exchange1c_xml_date', `value` = '2023-09-20T16:27:21', `serialized` = 0
+2023-09-20 16:27:24 - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-09-20 16:27:24 - 8753(M) ЗАГРУЗКА КАТАЛОГА
+2023-09-20 16:27:24 - 6282(M) ЗАГРУЗКА ТОЛЬКО ИЗМЕНЕНИЙ
+2023-09-20 16:27:24 - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-09-20 16:27:24 - 8791(M) КОНЕЦ ЗАГРУЗКИ ДАННЫХ
+2023-09-20 16:27:24 - 0106(M) Время обработки exchange: 0.025357961654663 сек
+2023-09-20 16:27:24 - 8793(M):
+2023-09-20 16:27:24 - Array
+(
+    [exchange] => 0.025357961654663
+    [xml_load] => 0.00047397613525391
+    [date] => 2023-09-20T16:27:21
+    [classifier_parse] => 0.024335145950317
+    [classifier_categories_parse] => 0.021286010742188
+    [classifier_category_num] => 150
+)
+
+2023-09-20 16:27:24 - 5327(M) SELECT * FROM `oc_setting` WHERE `code` = 'exchange1c-stat' AND `key` = 'stat_import___80669240-4580-41ab-9f17-ff4669b9f88a.xml'
+2023-09-20 16:27:24 - 5333(M) INSERT INTO `oc_setting` SET `store_id` = 0, `code` = 'exchange1c-stat', `key` = 'stat_import___80669240-4580-41ab-9f17-ff4669b9f88a.xml', `value` = '{"exchange":0.0253579616546630859375,"xml_load":0.00047397613525390625,"date":"2023-09-20T16:27:21","classifier_parse":0.0243351459503173828125,"classifier_categories_parse":0.0212860107421875,"classifier_category_num":150}', `serialized` = 1
+2023-09-20 16:27:24 - 2626(C) Удален файл: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/import___80669240-4580-41ab-9f17-ff4669b9f88a.xml
+2023-09-20 16:27:24 - 0042(C) success
+2023-09-20 16:27:24 - 0045(C) Successfully processed file: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/import___80669240-4580-41ab-9f17-ff4669b9f88a.xml
+2023-09-20 16:27:28 - 2399(C) POST_MAX_SIZE: 1048576000
+2023-09-20 16:27:28 - 2403(C) POST_MAX_SIZE (переопределен в настройках): 104857600
+2023-09-20 16:27:28 - 2155(C) PHP Version: 70433
+2023-09-20 16:27:28 - 2156(C) client_max_body_size: 
+2023-09-20 16:27:28 - 2087(C):
+2023-09-20 16:27:28 - Array
+(
+    [0] => zip=no
+    [1] => file_limit=104857600
+    [2] => sessid=3e0fc24c69d6e6c3ac6d64b1ca8b7840
+    [3] => 3.0
+)
+
+2023-09-20 16:27:28 - 2088(C) Mode Catalog Init
+2023-09-20 16:27:28 - 2089(C):
+2023-09-20 16:27:28 - Array
+(
+    [0] => zip=no
+    [1] => file_limit=104857600
+    [2] => sessid=3e0fc24c69d6e6c3ac6d64b1ca8b7840
+    [3] => 3.0
+)
+
+2023-09-20 16:27:28 - 2461(C) upload file: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml
+2023-09-20 16:27:28 - 2469(C) file size: 1703
+2023-09-20 16:27:28 - 0042(C) success
+2023-09-20 16:27:28 - 0045(C) Successfully import catalog 
+2023-09-20 16:27:29 - 2589(C) modeImport
+2023-09-20 16:27:29 - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-09-20 16:27:29 - 8688(M) НАЧАЛО ЗАГРУЗКИ ДАННЫХ
+2023-09-20 16:27:29 - 0658(M) SELECT `language_id` FROM `oc_language` WHERE `code` = 'uk-ua'
+2023-09-20 16:27:29 - 8693(M) Язык загрузки, id: 2
+2023-09-20 16:27:29 - 8707(M) Читается XML файл: 'discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml'
+2023-09-20 16:27:29 - 0106(M) Время обработки xml_load: 9.7990036010742E-5 сек
+2023-09-20 16:27:29 - 0201(M) Версия XML: 3.1
+2023-09-20 16:27:29 - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-09-20 16:27:29 - 8744(M) ЗАГРУЗКА КЛАССИФИКАТОРА
+2023-09-20 16:27:29 - 8542(M) *** ЧТЕНИЕ СВОЙСТВ ***
+2023-09-20 16:27:29 - 3478(M) SELECT `a1c`.`attribute_id`, `a1c`.`guid`, `a1c`.`version`, `ad`.`name` FROM `oc_attribute_to_1c` `a1c` LEFT JOIN `oc_attribute_description` `ad` ON (`a1c`.`attribute_id` = `ad`.`attribute_id`) WHERE `ad`.`language_id` = 2
+2023-09-20 16:27:29 - 3495(M) SELECT `attribute_value_id`, `guid`, `name` FROM `oc_attribute_value` WHERE `attribute_id` = 12
+2023-09-20 16:27:29 - 3519(M) Атрибутов в базе: 1
+2023-09-20 16:27:29 - 3754(M) ********************************************
+2023-09-20 16:27:29 - 3709(M) SELECT `attribute_group_id`, `name` FROM `oc_attribute_group_description` WHERE `language_id` = 2
+2023-09-20 16:27:29 - 3717(M) Группы атрибутов в базе: 1
+2023-09-20 16:27:29 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/nx445983/siteweb.org.ua/kancklas/admin/model/extension/exchange1c.php on line 3770
+2023-09-20 16:27:29 - 3787(M) Свойств в файле: 1
+2023-09-20 16:27:29 - 3792(M) ********************************************
+2023-09-20 16:27:29 - 3812(M) Атрибут: Якість, GUID: 23415e1c-bb14-11ec-bbae-3cecefb02187
+2023-09-20 16:27:29 - 3886(M) Группа атрибута: Свойства, id: 7
+2023-09-20 16:27:29 - 3935(M) Атрибут существует, attribute_id = 12
+2023-09-20 16:27:29 - 3586(M) SELECT `a`.`attribute_group_id`, `a`.`sort_order`, `ad`.`name` FROM `oc_attribute` `a` LEFT JOIN `oc_attribute_description` `ad` ON (`a`.`attribute_id` = `ad`.`attribute_id`) WHERE `a`.`attribute_id` = 12 AND `ad`.`language_id` = 2
+2023-09-20 16:27:29 - 3597(M) SELECT `attribute_value_id`, `guid`, `name` FROM `oc_attribute_value` WHERE `attribute_id` = 12
+2023-09-20 16:27:29 - 3981(M) Завершено чтение атрибутов из файла
+2023-09-20 16:27:29 - 3982(M) ********************************************
+2023-09-20 16:27:29 - 0130(M) Время обработки attributes_parse: 0.00083303451538086 сек
+2023-09-20 16:27:29 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/nx445983/siteweb.org.ua/kancklas/admin/model/extension/exchange1c.php on line 8556
+2023-09-20 16:27:29 - 8556(M) Атрибутов загружено: 0
+2023-09-20 16:27:29 - 8560(M) Классификатор успешно прочитан
+2023-09-20 16:27:29 - 0106(M) Время обработки classifier_parse: 0.0022377967834473 сек
+2023-09-20 16:27:29 - 5327(M) SELECT * FROM `oc_setting` WHERE `code` = 'exchange1c' AND `key` = 'exchange1c_xml_date'
+2023-09-20 16:27:29 - 5330(M) UPDATE `oc_setting` SET `value` = '2023-09-20T16:27:28' WHERE `setting_id` = 4195
+2023-09-20 16:27:29 - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-09-20 16:27:29 - 8753(M) ЗАГРУЗКА КАТАЛОГА
+2023-09-20 16:27:29 - 6282(M) ЗАГРУЗКА ТОЛЬКО ИЗМЕНЕНИЙ
+2023-09-20 16:27:29 - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-09-20 16:27:29 - 8791(M) КОНЕЦ ЗАГРУЗКИ ДАННЫХ
+2023-09-20 16:27:29 - 0106(M) Время обработки exchange: 0.0028488636016846 сек
+2023-09-20 16:27:29 - 8793(M):
+2023-09-20 16:27:29 - Array
+(
+    [exchange] => 0.0028488636016846
+    [xml_load] => 9.7990036010742E-5
+    [date] => 2023-09-20T16:27:28
+    [classifier_parse] => 0.0022377967834473
+    [attributes_parse] => 0.00083303451538086
+    [attribute_num] => 1
+)
+
+2023-09-20 16:27:29 - 5327(M) SELECT * FROM `oc_setting` WHERE `code` = 'exchange1c-stat' AND `key` = 'stat_discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml'
+2023-09-20 16:27:29 - 5333(M) INSERT INTO `oc_setting` SET `store_id` = 0, `code` = 'exchange1c-stat', `key` = 'stat_discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml', `value` = '{"exchange":0.0028488636016845703125,"xml_load":9.79900360107421875e-5,"date":"2023-09-20T16:27:28","classifier_parse":0.002237796783447265625,"attributes_parse":0.000833034515380859375,"attribute_num":1}', `serialized` = 1
+2023-09-20 16:27:29 - 2626(C) Удален файл: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml
+2023-09-20 16:27:29 - 0042(C) success
+2023-09-20 16:27:29 - 0045(C) Successfully processed file: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml
