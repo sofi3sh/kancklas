@@ -1,18 +1,19 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://kanzklas/admin/');
-define('HTTP_CATALOG', 'http://kanzklas/');
+define('HTTP_SERVER', 'http://kancklasnew/admin/');
+define('HTTP_CATALOG', 'http://kancklasnew/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://kanzklas/admin/');
-define('HTTPS_CATALOG', 'https://kanzklas/');
+define('HTTPS_SERVER', 'http://kancklasnew/admin/');
+define('HTTPS_CATALOG', 'http://kancklasnew/');
 
 // DIR
-define('DIR_APPLICATION', 'E:/apps/ospanel/domains/kanzklas/admin/');
-define('DIR_SYSTEM', 'E:/apps/ospanel/domains/kanzklas/system/');
-define('DIR_IMAGE', 'E:/apps/ospanel/domains/kanzklas/image/');
+
+define('DIR_APPLICATION', 'D:/OSPanel/domains/kancklasnew/admin/');
+define('DIR_SYSTEM', 'D:/OSPanel/domains/kancklasnew/system/');
+define('DIR_IMAGE', 'D:/OSPanel/domains/kancklasnew/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
-define('DIR_CATALOG', 'E:/apps/ospanel/domains/kanzklas/catalog/');
+define('DIR_CATALOG', 'D:/OSPanel/domains/kancklasnew/catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
@@ -28,7 +29,7 @@ define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_DATABASE', 'kanzklas');
+define('DB_DATABASE', 'kancklasnew');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
