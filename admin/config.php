@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'https://kancklas.siteweb.org.ua/admin/');
-define('HTTP_CATALOG', 'https://kancklas.siteweb.org.ua/');
+define('HTTP_SERVER', 'http://kanzklas/admin/');
+define('HTTP_CATALOG', 'http://kanzklas/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://kancklas.siteweb.org.ua/admin/');
-define('HTTPS_CATALOG', 'https://kancklas.siteweb.org.ua/');
+define('HTTPS_SERVER', 'https://kanzklas/admin/');
+define('HTTPS_CATALOG', 'https://kanzklas/');
 
 // DIR
 define('DIR_APPLICATION', 'E:/apps/ospanel/domains/kanzklas/admin/');
