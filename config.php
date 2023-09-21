@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'https://kancklasnew/');
+define('HTTP_SERVER', 'http://kancklasnew/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://kancklasnew/');
+define('HTTPS_SERVER', 'http://kancklasnew/');
 
 // DIR
 define('DIR_APPLICATION', 'F:/OSPanel/domains/kancklasnew/catalog/');

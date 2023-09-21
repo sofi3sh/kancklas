@@ -513,4 +513,18 @@
 2023-09-20 16:27:29 - 5333(M) INSERT INTO `oc_setting` SET `store_id` = 0, `code` = 'exchange1c-stat', `key` = 'stat_discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml', `value` = '{"exchange":0.0028488636016845703125,"xml_load":9.79900360107421875e-5,"date":"2023-09-20T16:27:28","classifier_parse":0.002237796783447265625,"attributes_parse":0.000833034515380859375,"attribute_num":1}', `serialized` = 1
 2023-09-20 16:27:29 - 2626(C) Удален файл: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml
 2023-09-20 16:27:29 - 0042(C) success
-2023-09-20 16:27:29 - 0045(C) Successfully processed file: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml
+2023-09-20 16:27:29 - 0045(C) Successfully processed file: /home/nx445983/siteweb.org.ua/kancklas/system/storage/cache/exchange1c/discountCard___15edd3fc-9afe-4301-a374-9f9f660a83f6.xml2023-09-21 9:19:57 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:20:08 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:20:38 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:21:03 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:24:46 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:24:59 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:25:43 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:25:45 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:25:50 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:25:54 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:25:54 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:25:56 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:26:04 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:26:17 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-21 9:26:49 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117

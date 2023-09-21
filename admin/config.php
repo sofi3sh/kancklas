@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'https://kancklasnew/admin/');
-define('HTTP_CATALOG', 'https://kancklasnew/');
+define('HTTP_SERVER', 'http://kancklasnew/admin/');
+define('HTTP_CATALOG', 'http://kancklasnew/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://kancklasnew/admin/');
-define('HTTPS_CATALOG', 'https://kancklasnew/');
+define('HTTPS_SERVER', 'http://kancklasnew/admin/');
+define('HTTPS_CATALOG', 'http://kancklasnew/');
 
 // DIR
 define('DIR_APPLICATION', 'F:/OSPanel/domains/kancklasnew/admin/');

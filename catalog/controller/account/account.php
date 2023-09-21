@@ -66,8 +66,22 @@ class ControllerAccountAccount extends Controller {
 		$data['transaction'] = $this->url->link('account/transaction', '', true);
 		$data['newsletter'] = $this->url->link('account/newsletter', '', true);
 		$data['recurring'] = $this->url->link('account/recurring', '', true);
-		
-		$this->load->model('account/customer');
+
+        // custom manager cabinet
+        $data['manager_order'] = $this->url->link('account/manager_order', '', true);
+        $data['manager_setting'] = $this->url->link('account/manager_setting', '', true);
+        $data['manager_images'] = $this->url->link('account/manager_images', '', true);
+        $data['manager_missing_product'] = $this->url->link('account/manager_missing_product', '', true);
+        $data['manager_return_order'] = $this->url->link('account/manager_return_order', '', true);
+        $data['manager_transaction_history'] = $this->url->link('account/manager_transaction_history', '', true);
+
+        // custom dealer cabinet
+        $data['dealer_unknow_functional'] = $this->url->link('account/dealer_unknow_functional', '', true);
+
+        // custom user cabinet
+        $data['user_unknow_functional'] = $this->url->link('account/user_unknow_functional', '', true);
+
+        $this->load->model('account/customer');
 		
 		$affiliate_info = $this->model_account_customer->getAffiliate($this->customer->getId());
 		
