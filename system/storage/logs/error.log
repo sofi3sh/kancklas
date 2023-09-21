@@ -22,3 +22,4 @@
 2023-09-20 14:58:16 - 0052(C) Incorrect password
 2023-09-20 14:58:24 - 0049(C) failure
 2023-09-20 14:58:24 - 0052(C) Incorrect password
+2023-09-21 6:25:52 - PHP Notice:  date_default_timezone_set(): Timezone ID 'Europe/Kyiv' is invalid in E:\Apps\OSPanel\domains\kanzklas\catalog\controller\startup\startup.php on line 37
