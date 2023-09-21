@@ -65,7 +65,22 @@ class ControllerAccountAccount extends Controller {
 		$data['return'] = $this->url->link('account/return', '', true);
 		$data['transaction'] = $this->url->link('account/transaction', '', true);
 		$data['newsletter'] = $this->url->link('account/newsletter', '', true);
-		$data['recurring'] = $this->url->link('account/recurring', '', true);
+
+        // manager
+        $data['manager_order'] = $this->url->link('account/manager_order', '', true);
+        $data['manager_setting'] = $this->url->link('account/manager_setting', '', true);
+        $data['manager_images'] = $this->url->link('account/manager_images', '', true);
+        $data['manager_missing_product'] = $this->url->link('account/manager_missing_product', '', true);
+        $data['manager_return_order'] = $this->url->link('account/manager_return_order', '', true);
+        $data['manager_transaction_history'] = $this->url->link('account/manager_transaction_history', '', true);
+
+        // dealer
+        $data['dealer_unknow_functional'] = $this->url->link('account/dealer_unknow_functional', '', true);
+
+        // user
+        $data['user_unknow_functional'] = $this->url->link('account/user_unknow_functional', '', true);
+
+        $data['recurring'] = $this->url->link('account/recurring', '', true);
 		
 		$this->load->model('account/customer');
 		
