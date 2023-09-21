@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'https://kancklas.siteweb.org.ua/');
+define('HTTP_SERVER', 'http://kanzklas/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://kancklas.siteweb.org.ua/');
+define('HTTPS_SERVER', 'http://kanzklas/');
 
 // DIR
 define('DIR_APPLICATION', 'E:/apps/ospanel/domains/kanzklas/catalog/');
