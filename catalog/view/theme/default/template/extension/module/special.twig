@@ -7,7 +7,7 @@
 <section class="section__gray__cust slider-section__cust">
     <div class="container__cust">
         <div class="special__swiper__cust">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper swiper__wrapper__cust" >
                 {% for product in products %}
                     <div class="swiper-slide">
                         <div class="product__card__hover__cust">
@@ -21,6 +21,15 @@
                                     <p class="product__card__name__cust"><a
                                                 href="{{ product.href }}">{{ product.name }}</a></p>
                                     {# TODO: потрібно зробити нормальний рейтинг як на макеті #}
+                                    <div>
+                                        <svg width="99" height="19" viewBox="0 0 99 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.5 0L11.6329 6.56434H18.535L12.9511 10.6213L15.084 17.1857L9.5 13.1287L3.91604 17.1857L6.04892 10.6213L0.464963 6.56434H7.36712L9.5 0Z" fill="#D9D9D9"/>
+                                            <path d="M29.5 0L31.6329 6.56434H38.535L32.9511 10.6213L35.084 17.1857L29.5 13.1287L23.916 17.1857L26.0489 10.6213L20.465 6.56434H27.3671L29.5 0Z" fill="#D9D9D9"/>
+                                            <path d="M49.5 0L51.6329 6.56434H58.535L52.9511 10.6213L55.084 17.1857L49.5 13.1287L43.916 17.1857L46.0489 10.6213L40.465 6.56434H47.3671L49.5 0Z" fill="#D9D9D9"/>
+                                            <path d="M69.5 0L71.6329 6.56434H78.535L72.9511 10.6213L75.084 17.1857L69.5 13.1287L63.916 17.1857L66.0489 10.6213L60.465 6.56434H67.3671L69.5 0Z" fill="#D9D9D9"/>
+                                            <path d="M89.5 0L91.6329 6.56434H98.535L92.9511 10.6213L95.084 17.1857L89.5 13.1287L83.916 17.1857L86.0489 10.6213L80.465 6.56434H87.3671L89.5 0Z" fill="#D9D9D9"/>
+                                        </svg>
+                                    </div>
                                     {% if product.rating %}
                                         <div class="rating">
                                             {% for i in 1..5 %}
@@ -73,24 +82,31 @@
 
 {# TODO: потрібно потім перенести в файл css #}
 <style>
-    .product__card__hover__cust {
-        height: 100%;
-        padding: 55px 0;
+    .swiper__wrapper__cust {
+        height: 500px;
     }
 
-    .product__card__hover__cust:hover {
-        padding: 0;
+    .product__card__hover__cust {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
     }
 
 
     .product__card__cust {
+        height: 90% !important;
         background-color: #FFFFFF;
         border: 2px solid #BFBFBF;
         padding: 24px 34px;
+        transition: all 0.3s ease-in-out;
+        height: auto;
     }
 
     .product__card__hover__cust:hover .product__card__cust {
+        margin: 0;
         border-color: #FF0B0B;
+        height: 100% !important;
     }
 
     .product__card__img__cust {
@@ -150,6 +166,11 @@
         line-height: 26px;
         letter-spacing: 0em;
         color: #7A7A7A;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .product__card__hover__cust:hover .product__card__new__price__cust {
+        color: #000000;
     }
 </style>
 
