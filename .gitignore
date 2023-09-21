@@ -1,0 +1,23 @@
+# Опенкарт 3 - Загальні файли та папки для ігнорування
+
+# Всі файли та папки, які генеруються при встановленні та роботі опенкарт 3
+config.php
+admin/config.php
+image/
+system/storage/
+system/logs/
+system/download/
+system/upload/
+system/modification/
+
+# Системні файли та папки
+.htaccess
+.svn/
+.idea/
+.vscode/
+.DS_Store
+
+# Кеш та тимчасові файли
+cache/
+data/
+backup/
