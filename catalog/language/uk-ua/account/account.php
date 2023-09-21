@@ -24,3 +24,21 @@ $_['text_transactions'] = 'Транзакції';
 $_['text_affiliate_add']  = 'Реєстрація у партнерській програмі';
 $_['text_affiliate_edit'] = 'Редагувати інформацію партнера';
 $_['text_tracking']       = 'Редагувати партнерське посилання';
+
+// manager
+$_['text_manager_title']       = 'Кабінет менеджера';
+$_['text_manager_order']       = 'Замовлення';
+$_['text_manager_setting']       = 'Налаштування';
+$_['text_manager_images']       = 'Зображення';
+$_['text_manager_missing_product']       = 'Пропавший товар';
+$_['text_manager_return_order']       = 'Запити на повернення';
+$_['text_manager_transaction_history']       = 'Історія транзакцій';
+
+// dealer
+$_['text_dealer_title']       = 'Кабінет диллера';
+$_['text_dealer_unknow_functional']       = 'Щось';
+
+// user
+$_['text_user_title']       = 'Кабінет користувача';
+$_['text_user_unknow_functional']       = 'Ще щось';
+

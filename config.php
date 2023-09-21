@@ -6,9 +6,9 @@ define('HTTP_SERVER', 'http://kancklasnew/');
 define('HTTPS_SERVER', 'http://kancklasnew/');
 
 // DIR
-define('DIR_APPLICATION', 'F:/OSPanel/domains/kancklasnew/catalog/');
-define('DIR_SYSTEM', 'F:/OSPanel/domains/kancklasnew/system/');
-define('DIR_IMAGE', 'F:/OSPanel/domains/kancklasnew/image/');
+define('DIR_APPLICATION', 'D:/OSPanel/domains/kancklasnew/catalog/');
+define('DIR_SYSTEM', 'D:/OSPanel/domains/kancklasnew/system/');
+define('DIR_IMAGE', 'D:/OSPanel/domains/kancklasnew/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
@@ -25,6 +25,6 @@ define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_DATABASE', 'kancklas');
+define('DB_DATABASE', 'kancklasnew');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
