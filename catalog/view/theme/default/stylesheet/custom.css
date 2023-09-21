@@ -46,13 +46,3 @@
 }
 
 /* product card */
-
-.product_card_name_cust a {
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #000000 !important;
-}
