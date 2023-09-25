@@ -66,3 +66,4 @@ backup/
 /php.ini
 /replay_pid8128.log
 /robots.txt
+/.gitignore
