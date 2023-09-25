@@ -11,7 +11,6 @@ system/upload/
 system/modification/
 
 # Системні файли та папки
-.gitignore
 .htaccess
 .svn/
 .idea/

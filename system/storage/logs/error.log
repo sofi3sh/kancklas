@@ -528,3 +528,4 @@
 2023-09-21 9:26:04 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
 2023-09-21 9:26:17 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
 2023-09-21 9:26:49 - PHP Notice:  Undefined index: en-gb in F:\OSPanel\domains\kancklasnew\catalog\controller\startup\startup.php on line 117
+2023-09-22 8:55:22 - PHP Notice:  Undefined property: Loader::$model_accaunt_manager_manager_setting in F:\OSPanel\domains\kancklasnew\catalog\controller\account\manager\manager_setting.php on line 35
